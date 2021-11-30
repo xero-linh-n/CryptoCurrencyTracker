@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct CryptoCurrencyTrackerAppApp: App {
+struct CryptoCurrencyTrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CoinListView()
         }
     }
 }

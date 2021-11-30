@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		56A744612754A229005F76CA /* CryptoCurrencyTrackerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A744602754A229005F76CA /* CryptoCurrencyTrackerAppApp.swift */; };
-		56A744632754A229005F76CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A744622754A229005F76CA /* ContentView.swift */; };
+		56A744612754A229005F76CA /* CryptoCurrencyTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A744602754A229005F76CA /* CryptoCurrencyTrackerApp.swift */; };
+		56A744632754A229005F76CA /* CoinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A744622754A229005F76CA /* CoinListView.swift */; };
 		56A744652754A22C005F76CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A744642754A22C005F76CA /* Assets.xcassets */; };
 		56A744682754A22C005F76CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A744672754A22C005F76CA /* Preview Assets.xcassets */; };
+		56A7446F2754A2E3005F76CA /* CoinListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A7446E2754A2E3005F76CA /* CoinListViewModel.swift */; };
+		56A744712754A4A2005F76CA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A744702754A4A2005F76CA /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		56A7445D2754A229005F76CA /* CryptoCurrencyTrackerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoCurrencyTrackerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		56A744602754A229005F76CA /* CryptoCurrencyTrackerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyTrackerAppApp.swift; sourceTree = "<group>"; };
-		56A744622754A229005F76CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		56A7445D2754A229005F76CA /* CryptoCurrencyTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoCurrencyTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A744602754A229005F76CA /* CryptoCurrencyTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyTrackerApp.swift; sourceTree = "<group>"; };
+		56A744622754A229005F76CA /* CoinListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListView.swift; sourceTree = "<group>"; };
 		56A744642754A22C005F76CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56A744672754A22C005F76CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		56A7446E2754A2E3005F76CA /* CoinListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListViewModel.swift; sourceTree = "<group>"; };
+		56A744702754A4A2005F76CA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +39,7 @@
 		56A744542754A229005F76CA = {
 			isa = PBXGroup;
 			children = (
-				56A7445F2754A229005F76CA /* CryptoCurrencyTrackerApp */,
+				56A7445F2754A229005F76CA /* CryptoCurrencyTracker */,
 				56A7445E2754A229005F76CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +47,22 @@
 		56A7445E2754A229005F76CA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				56A7445D2754A229005F76CA /* CryptoCurrencyTrackerApp.app */,
+				56A7445D2754A229005F76CA /* CryptoCurrencyTracker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		56A7445F2754A229005F76CA /* CryptoCurrencyTrackerApp */ = {
+		56A7445F2754A229005F76CA /* CryptoCurrencyTracker */ = {
 			isa = PBXGroup;
 			children = (
-				56A744602754A229005F76CA /* CryptoCurrencyTrackerAppApp.swift */,
-				56A744622754A229005F76CA /* ContentView.swift */,
+				56A744702754A4A2005F76CA /* NetworkService.swift */,
+				56A7446E2754A2E3005F76CA /* CoinListViewModel.swift */,
+				56A744602754A229005F76CA /* CryptoCurrencyTrackerApp.swift */,
+				56A744622754A229005F76CA /* CoinListView.swift */,
 				56A744642754A22C005F76CA /* Assets.xcassets */,
 				56A744662754A22C005F76CA /* Preview Content */,
 			);
-			path = CryptoCurrencyTrackerApp;
+			path = CryptoCurrencyTracker;
 			sourceTree = "<group>";
 		};
 		56A744662754A22C005F76CA /* Preview Content */ = {
@@ -70,9 +76,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		56A7445C2754A229005F76CA /* CryptoCurrencyTrackerApp */ = {
+		56A7445C2754A229005F76CA /* CryptoCurrencyTracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 56A7446B2754A22C005F76CA /* Build configuration list for PBXNativeTarget "CryptoCurrencyTrackerApp" */;
+			buildConfigurationList = 56A7446B2754A22C005F76CA /* Build configuration list for PBXNativeTarget "CryptoCurrencyTracker" */;
 			buildPhases = (
 				56A744592754A229005F76CA /* Sources */,
 				56A7445A2754A229005F76CA /* Frameworks */,
@@ -82,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = CryptoCurrencyTrackerApp;
+			name = CryptoCurrencyTracker;
 			productName = CryptoCurrencyTrackerApp;
-			productReference = 56A7445D2754A229005F76CA /* CryptoCurrencyTrackerApp.app */;
+			productReference = 56A7445D2754A229005F76CA /* CryptoCurrencyTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 56A744582754A229005F76CA /* Build configuration list for PBXProject "CryptoCurrencyTrackerApp" */;
+			buildConfigurationList = 56A744582754A229005F76CA /* Build configuration list for PBXProject "CryptoCurrencyTracker" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				56A7445C2754A229005F76CA /* CryptoCurrencyTrackerApp */,
+				56A7445C2754A229005F76CA /* CryptoCurrencyTracker */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56A744632754A229005F76CA /* ContentView.swift in Sources */,
-				56A744612754A229005F76CA /* CryptoCurrencyTrackerAppApp.swift in Sources */,
+				56A7446F2754A2E3005F76CA /* CoinListViewModel.swift in Sources */,
+				56A744632754A229005F76CA /* CoinListView.swift in Sources */,
+				56A744712754A4A2005F76CA /* NetworkService.swift in Sources */,
+				56A744612754A229005F76CA /* CryptoCurrencyTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +276,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CryptoCurrencyTrackerApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CryptoCurrencyTracker/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -296,7 +304,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CryptoCurrencyTrackerApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CryptoCurrencyTracker/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -320,7 +328,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		56A744582754A229005F76CA /* Build configuration list for PBXProject "CryptoCurrencyTrackerApp" */ = {
+		56A744582754A229005F76CA /* Build configuration list for PBXProject "CryptoCurrencyTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				56A744692754A22C005F76CA /* Debug */,
@@ -329,7 +337,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		56A7446B2754A22C005F76CA /* Build configuration list for PBXNativeTarget "CryptoCurrencyTrackerApp" */ = {
+		56A7446B2754A22C005F76CA /* Build configuration list for PBXNativeTarget "CryptoCurrencyTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				56A7446C2754A22C005F76CA /* Debug */,
